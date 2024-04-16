@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognizer App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add padding to the left side of the ul element */
+        ul {
+            padding-left: 50px; /* Adjust the value as needed */
+        }
+        p {
+            padding-left: 30px;
+        }
+        h1 {
+            padding-left: 29px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Face Recognizer App!</h1>
+    <p>This app allows you to register users by uploading their images. Later, you can upload any image to recognize the registered users in that image.</p>
+
+    <ul>
+        <li><a href="{{ url_for('register') }}">Register a New User</a></li>
+        <li><a href="{{ url_for('recognize') }}">Recognize Users in an Image</a></li>
+    </ul>
+</body>
+</html>
