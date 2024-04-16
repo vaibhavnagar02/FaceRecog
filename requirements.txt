@@ -1,1 +1,4 @@
 Flask
+face_recognition
+sqlalchemy
+
